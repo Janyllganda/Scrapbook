@@ -149,7 +149,7 @@ const SITE = {
         "frame": "1/1"
       },
       {
-        "src": "images/like-4.jpg",
+        "src": "images/like-4.png",
         "alt": "Aesthetic purple badminton racket with pastel lavender shuttlecock",
         "tag": "energy 🏸",
         "title": "Badminton Days",
