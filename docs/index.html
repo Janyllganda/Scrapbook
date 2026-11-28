@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cassandra Janyll D. Manalese — Lavender Scrapbook</title>
+<meta name="description" content="A sweet, soft student with a heart full of dreams. Step into a whimsical lilac scrapbook.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=EB+Garamond:ital@0;1&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="wisteria.css">
+<link rel="stylesheet" href="dark.css">
+<script src="dark.js"></script>
+</head>
+<body>
+<!-- Everything you read on the page comes from content.js. Edit that file, not this one. -->
+<div id="particles" aria-hidden="true"></div>
+<main class="page">
+  <section id="top" class="hero"></section>
+  <section id="about" class="chapter"></section>
+  <section id="likes" class="chapter"></section>
+  <section id="experiences" class="chapter"></section>
+  <section id="connect" class="connect"></section>
+</main>
+
+<aside id="player">
+  <div class="panel" id="mood" hidden><span class="washi">song mood ✦</span>
+    <p class="label" id="mood-t"></p><blockquote class="serif" id="mood-q"></blockquote></div>
+  <div class="panel" id="playlist" hidden>
+    <div class="listhead"><i id="pl-name"></i><span class="muted" id="pl-count"></span></div><div id="tracks"></div></div>
+  <div class="bar-pill">
+    <div class="vinyl" id="vinyl">🌸</div>
+    <button class="song" id="song"><b id="song-t"></b><span id="song-a"></span></button>
+    <button class="pp" id="pp" aria-label="Play or pause">❚❚</button>
+    <button class="nx" id="nx" aria-label="Next song">⏭</button>
+    <button class="chip" id="lyr">♪ Mood</button>
+    <button class="chip" id="pet">🌸 Petals: On</button>
+    <button class="chip dm" id="dm">🌙 Dark</button>
+    <button class="ls" id="ls" aria-label="View playlist">☰</button>
+  </div>
+</aside>
+<div class="butterfly-layer" aria-hidden="true">
+  <div class="butterfly-shadow"><img src="butterfly.svg" alt=""></div>
+  <div class="butterfly"><img src="butterfly.svg" alt=""></div>
+</div>
+<button id="top-btn" aria-label="Back to top">↑</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="content.js"></script>
+<script src="script.js"></script>
+<script src="butterfly.js"></script>
+<script src="wisteria.js"></script>
+</body>
+</html>

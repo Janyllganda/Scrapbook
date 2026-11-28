@@ -13,3 +13,7 @@ IMAGE PLACEHOLDERS — save your photos in this folder with these exact names
 
 In content.js each one is written like:   src: "images/like-1.jpg"
 Photos are cropped to fit, so any size works. Keep each under ~1 MB for a fast page.
+
+The site source lives in the repository root. GitHub Pages publishes a copy from docs/,
+so after changing site files or media, run `node scripts/sync-pages.mjs` and commit
+the updated docs/ files too. Do not edit the docs/ copies directly.
