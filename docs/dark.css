@@ -1,0 +1,17 @@
+/* ===== dark.css — dark mode (switched on by the 🌙 button in the player) ===== */
+.chip.dm{display:block}
+body{transition:background-color .3s,color .3s}
+
+html[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#14111c;--fg:#ece8f5;--primary:#a68bf0;--muted:#292236;--muted-fg:#bdb6cc;--border:#3a3350;
+  --lavender:#352c52;--lilac:#b195fd;--blush:#4a2a47;--paper:#1f1a2e;--ink:#d9ccff}
+
+/* things with hard-coded light colors */
+html[data-theme="dark"] .badge{background:rgba(31,26,46,.8)}
+html[data-theme="dark"] .paper.post{background:#262035}
+html[data-theme="dark"] .washi{color:#2b1c57}
+html[data-theme="dark"] .ph{background:repeating-linear-gradient(45deg,#352c52 0 10px,#2a2340 10px 20px)}
+/* buttons with white text keep a deeper purple so the text stays readable */
+html[data-theme="dark"] .btn.main,html[data-theme="dark"] .pp,html[data-theme="dark"] #top-btn,html[data-theme="dark"] .pill{background:#7a5bd0}
+html[data-theme="dark"] .vinyl,html[data-theme="dark"] .vis .film span{background:#4f3395}
