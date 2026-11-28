@@ -201,7 +201,15 @@ function initBackToTop() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  document.title = SITE.title; document.querySelector("head").insertAdjacentHTML("beforeend", `<meta name="description" content="${esc(SITE.description)}">`);
+  document.title = SITE.title;
+  const description = document.querySelector('meta[name="description"]');
+  if (description) description.content = SITE.description;
+  else {
+    const meta = document.createElement("meta");
+    meta.name = "description";
+    meta.content = SITE.description;
+    document.head.appendChild(meta);
+  }
   buildHero(SITE.hero); buildAbout(SITE.about); buildLikes(SITE.likes); buildLearned(SITE.learned); buildConnect(SITE.connect);
   initScrollReveal(); initTilt(); initStickers(); buildParticles(); initPlayer(SITE.player); initBackToTop();
 });
